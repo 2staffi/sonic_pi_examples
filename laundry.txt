@@ -15,15 +15,6 @@ end
 
 3.times do
   wear(3)
-  sleep 1
-  stain = [true, false].choose
-  if stain == true
-    sample(:bass_hard_c)
-    sleep 1
-  else
-    sample(:ambi_dark_woosh)
-    sleep 1
-  end
   wash(100)
   dry(:ambi_choir)
 end
