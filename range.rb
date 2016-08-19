@@ -1,21 +1,20 @@
-def shoot()
-  play(60, amp:6)
+def shoot(acp)
+  play(acp)
   sleep 1
 end
 
-def clean()
-  play(70, amp:6)
+def clean(hoppe)
+  play(hoppe)
   sleep 1
 end
 
-def load()
-  play(80, amp:6)
+def load(round)
+  play(round)
   sleep 1
 end
 
-2.times do
-  shoot()
-  sleep 1
+5.times do
+  shoot(65)
   gunk = [true, false].choose
   if gunk == true
     sample(:ambi_piano)
@@ -24,12 +23,18 @@ end
     sample(:ambi_soft_buzz)
     sleep 1
   end
-  clean()
-  load()
+  clean(75)
+  load(85)
 end
 
 2.times do
-  shoot()
-  clean()
-  load()
+  shoot(67)
+  clean(77)
+  load(87)
+end
+
+2.times do
+  shoot(65)
+  clean(75)
+  load(85)
 end
