@@ -32,9 +32,3 @@ end
   clean(77)
   load(87)
 end
-
-2.times do
-  shoot(65)
-  clean(75)
-  load(85)
-end
